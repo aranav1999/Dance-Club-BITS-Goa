@@ -7,5 +7,16 @@
 @media only screen and (max-width:768px){
     .greyline {
         border-bottom: 1px solid gray;
-    }   
+    }
+    .jumbotron {
+	    display: block;
+	    width: auto;
+	}
+	html { 
+		background: url(young-ballerinas-pointe-shoes-footage-075173843_prevstill.JPG) no-repeat center center fixed;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+	}
 }
