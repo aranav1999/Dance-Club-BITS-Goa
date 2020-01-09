@@ -4136,8 +4136,9 @@ input[type="button"].btn-block {
   .navbar-expand-md .navbar-collapse {
     display: -ms-flexbox !important;
     display: flex !important;
-    -ms-flex-preferred-size: auto;
+    -ms-flex-preferred-size: 100%;
     flex-basis: auto;
+    width: 100% !important;
   }
   .navbar-expand-md .navbar-toggler {
     display: none;

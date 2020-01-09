@@ -1,22 +1,25 @@
 @media only screen and (min-width:768px){
     .greyline {
-        border-right: 1px solid gray;
+        border-bottom: 3px solid gray; 
+		width: 25%; 
+		margin: 0 auto; 
+		display: block; 
+		height: 95px;
     }   
 }
 
-@media only screen and (max-width:768px){
-    .greyline {
-        border-bottom: 1px solid gray;
+@media only screen and (max-width: 768px) {
+  .navbar-collapse
+    {
+        background: rgba(0, 1, 5, 0.6)!important;
     }
-    .jumbotron {
-	    display: block;
-	    width: auto;
-	}
-	html { 
-		background: url(young-ballerinas-pointe-shoes-footage-075173843_prevstill.JPG) no-repeat center center fixed;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		background-size: cover;
+    .collapse{
+    	width: 120%!important;
+		margin-left: -23px;
+		margin-right: -23px;
+		margin-top: -2px;
+    }
+    .changes{
+		width: 98% !important;
 	}
 }

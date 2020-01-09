@@ -8,12 +8,16 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="media.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
 	<style type="text/css">
 		@import url('https://fonts.googleapis.com/css?family=Lato:400,700&display=swap');
-		html{overflow-y: scroll;}
+		html{
+			overflow-y: scroll;
+			scroll-behavior: smooth;
+		}
 		body{
 			overflow-x: hidden;
-			font-family: 'Lato'!important, sans-serif;
+			font-family: 'Lato', sans-serif;
 			color: #505962;
 			background-image: url(young-ballerinas-pointe-shoes-footage-075173843_prevstill.JPG);
 			background-size: cover;
@@ -36,9 +40,11 @@
 			font-weight: 700;
 			font-size: 0.9rem;
 			letter-spacing: 0.1rem;
-			background: rgba(0, 0, 0, 0.6)!important;
+			background: rgba(0, 1, 5, 0.6)!important;
 			height: 4rem;
+			width: 101%;
 		}
+		
         a:hover {
             text-decoration: none;
         }
@@ -49,7 +55,7 @@
 		    width: auto;
 		    max-height: 60px;
 		    max-width: 250px;
-		    padding: 5px;px;
+		    padding: 5px;
             
 		}
 		
@@ -74,6 +80,7 @@
 			color: white;
 			text-transform: uppercase;
 		}
+
 		.caption h1 {
 			font-size: 3.2rem;
 			font-weight: 700;
@@ -87,14 +94,7 @@
 			text-shadow: 0.1rem 0.1rem 0.5rem black;
 			padding-bottom: 1.6rem;
 		}
-		footer {
-			font-size: 2rem;
-			text-shadow: 0.1rem 0.1rem 0.5rem black;
-			padding-bottom: 1.6rem;
-			letter-spacing: 0.1rem;
-			font-family: 'Lato'!important, sans-serif;
-			z-index: 1;
-		}
+		
 		.btn-lg{
 			border-width: medium;
 			border-radius: 0.2;
@@ -108,6 +108,12 @@
 			display: inline-block;
 			padding: 3px;
 		}
+		.avatar {
+		  vertical-align: middle;
+		  width: 50px;
+		  height: 50px;
+		  border-radius: 50%;
+		}
 		/*down arrow*/
 		.down {
 			transform: rotate(45deg);
@@ -120,7 +126,7 @@
 		}
 
 		/*--- Bootstrap Mobile Fix --*/
-		.row, .container-fluid {
+		.row .container-fluid {
 		margin-left: 0px!important;
 		margin-right: 0px!important;
 		}
@@ -152,6 +158,56 @@
 		.smed {
 		    font-size: 70px;
 		}
+		#footer #logo {
+			background-color: rgba(255, 103, 68, 0.91);
+			border-radius: 50%;
+			color: #fff;
+			padding: .4em;
+			font-family: "Maven pro", sans-serif;
+			font-size: 1.6em;
+			font-weight: 500;
+			display: inline;
+			text-align: center;
+			vertical-align: middle!important;
+		}
+		#footer #copyright {
+			margin-top: 1.6em;
+			font-family: "Maven pro", sans-serif;
+			font-weight: 500;
+			color: #7d7d7d;
+			text-align: center;
+			vertical-align: middle!important;
+		}
+		#footer {
+			padding: 3em 4em 2em;
+			text-align: center;
+			vertical-align: middle;
+		}
+		#footer-cta p {
+			color: #fff;
+			font-family: "Maven pro", sans-serif;
+			font-weight: 500;
+			font-size: 1.2em;
+		}
+
+		#footer-cta #logo:hover {
+			background: #fff;
+			color: rgba(255, 103, 68, 0.91);
+			box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.18), 0 4px 14px 1px rgba(0, 0, 0, 0.15);
+		}
+		.greyline {
+			border-bottom: 2px solid gray; 
+			width: 42%; 
+			margin: 0 auto; 
+			display: block; 
+			height: 75px;
+		}
+
+		.heading {
+			font-weight: 600;
+			letter-spacing: 0.1cm!important;
+			font-size: 300%;
+		}
 	</style>
 </head>
 
@@ -161,11 +217,11 @@
 		<!-- Navigation -->
 		<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" >
 			<a class="navbar-brand brand-name" href="#"><img class="img-responsive" src="64998462_1139138302960353_6781295323596718080_n.png"><span style="font-size: 32px; vertical-align: middle!important;" >UNIΦ</span></a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="navbarResponsive" >
-				<ul class="navbar-nav ml-auto" >
+			<div style="width: 120%!important;" class="collapse navbar-collapse" id="navbarResponsive" >
+				<ul class="navbar-nav ml-auto changes">
 					<li class="nav-item" >
 						<a class="nav-link" href="#home">Home</a>
 					</li>
@@ -209,13 +265,12 @@
 			<div class="jumbotron">
 				<div class="narrow">
 					<div class="col-12">
-						<h1 style="font-size: 300%; padding-bottom: 50px; letter-spacing: 0.2cm;" class="heading">GALLERY</h1>
-						<div class="heading-underline"></div>
+						<h1 style="font-size: 300%; padding-bottom: 20px;" class="heading">GALLERY</h1>
 					</div>
 					<div class="row text-center">
-						<div class="col-md-6 greyline">
+						<div class="col-md-6">
 							<div class="gallery">
-								<a href=""><i class="fas fa-play-circle fa-4x" data-fa-transform="shrink-3"></i>
+								<a href="#"><i class="fas fa-play-circle fa-4x" data-fa-transform="shrink-3"></i>
 								<h3>Videos</h3></a>
 							</div>
 						</div>
@@ -237,26 +292,28 @@
 			<div class="jumbotron">
 				<div class="narrow">
 					<div class="col-12">
-						<h1 style="font-size: 300%; padding-bottom: 50px; letter-spacing: 0.1cm;" class="heading">MEMBERS</h1>
-						<div class="heading-underline"></div>
+						<h1 style=" padding-bottom: 20px;" class="heading">MEMBERS</h1>
 					</div>
-					<div class="row text-center">
-						<div  class="col-md-4 greyline">
-							<div class="members">
-								<h3 class="memb">COORDINATORS</h3>
-								<p class="lead">Sarthak Shah<br>Yashi Dewari</p>
+					<div style="background-color: rgba(255, 255, 254, 0.7); padding-top: 20px; margin-top: 20px">
+						<div class="members">
+							<h3 class="memb text-center" style="font-weight: 600;">COORDINATORS</h3>
+							<br>	
+							<div class="row">
+								<h5 class="col-md-6"><img src="avatar_male.png" alt="Avatar" class="avatar">	Sarthak Shah</h5>
+								<h5 class="col-md-6"><img src="avatar_female.png" alt="Avatar" class="avatar">	Yashi Dewari</h5>
 							</div>
 						</div>
-						<div class="col-md-4 greyline">
-							<div class="members">
-								<h3 class="memb">CORE</h3>
-								<p class="lead">Moksh Bainsla<br>Umang Gupta<br>Jui Junnarkar</p>
-							</div>
-						</div>
-						<div class="col-md-4">
-							<div class="members">
-								<h3 class="memb">CREW</h3>
-								<p class="lead"></p>
+					</div>
+					<br>
+					<br>
+					<div style="background-color: rgba(255, 255, 254, 0.7); padding-top: 20px;">
+						<div class="members">
+							<h3  class="memb text-center" style="font-weight: 600;">CORE</h3>
+							<br>
+							<div class="row">
+								<h5 class="col-md-4"><img src="avatar_male.png" alt="Avatar" class="avatar">	Moksh Bainsla</h5>
+								<h5 class="col-md-4"><img src="avatar_female.png" alt="Avatar" class="avatar">	Jui Junnarkar</h5>
+								<h5 class="col-md-4"><img src="avatar_male.png" alt="Avatar" class="avatar">	Umang Gupta</h5>
 							</div>
 						</div>
 					</div>
@@ -271,8 +328,7 @@
 			<div class="jumbotron">
 				<div class="narrow">
 					<div class="col-12">
-						<h1 style="font-size: 300%; padding-bottom: 50px; letter-spacing: 0.1cm;" class="heading">CONNECT WITH US</h1>
-						<div class="heading-underline"></div>
+						<h1 style="padding-bottom: 20px;" class="heading">CONNECT WITH US</h1>
 					</div>
 					<div class="row" >
 						<div class="col-md-4 smed">
@@ -300,31 +356,37 @@
 		<div class="col-12 narrow text-center" >
 			<div class="jumbotron">
 				<div class="narrow">
-					<div class="col-12">
-						<h1 style="font-size: 300%; padding-bottom: 50px; letter-spacing: 0.1cm;" class="heading">ABOUT US</h1>
-						<div class="heading-underline"></div>
+					<div  class="col-12">
+						<h1 style="padding-bottom: 20px;" class="heading">ABOUT US</h1>
 						<P class="lead">
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-						tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam,
-						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-						consequat.<br> Duis aute irure dolor in reprehenderit in voluptate velit esse
-						cillum dolore eu fugiat nulla pariatur.<br> Excepteur sint occaecat cupidatat non
-						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</P>
+						We are the Dance Club of BITS Goa.  Visit our YouTube Channel to see the performances.
+						<br>Contact us using above information if you want us to come too your College.</P>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+
+
+</body>
+
+<section id="footer-cta">
+	<footer style="background-color: rgba(255,255,255,0.9);" id="footer">
+		<div class="row text-center" style="margin: 0 auto;">
+			<div class="small-12 medium-6 medium-offset-3 col-12">
+				<a href="mailto:bhuwantyagi2000@gmail.com"><p id="logo">BT</p></a>
+				<p id="copyright">Copyright &copy; 2020 | Bhuwan Tyagi</p>
+			</div>
+		</div>
+	</footer>
+</section>
+
+
+
 	<!--- Script Source Files -->
+<script src="assets/scripts/app.js" charset="utf-8"></script>
 <script src="bootstrap-4.1.3-dist/js/jquery-3.3.1.min.js"></script>
 <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
 	<!--- End of Script Source Files -->
-
-</body>
-<footer class="text-center" style="background-color: rgba(0,0,0,0.6); color: white;">
-  <p style="padding-top: 35px; font-weight: 200;" class="lead">Designed by : Bhuwan Tyagi</p>
-  <p style="font-weight: 100;" class="lead">Contact information : <a href="mailto:bhuwantyagi2000@gmail.com">
-  bhuwantyagi2000@gmail.com</a></p>
-</footer>
 </html>
